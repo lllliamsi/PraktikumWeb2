@@ -80,7 +80,7 @@
     <div class="container">
 
         <?php
-
+        // Fungsi berjalan jika sudah submit menggunakan isset
         if (isset($_POST["submit"])) {
             // Nangkep inputan
             $nama = $_POST["customer"];
@@ -103,7 +103,6 @@
             echo "Jumlah Beli : " . $jumlah . "<br>";
             echo "Total Belanja : Rp " . number_format($totalBelanja, 0, ",", ".");
         }
-
         ?>
 
     </div>
