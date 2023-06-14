@@ -32,3 +32,15 @@ Route::get('/produk', [ProdukController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index']);
 // Routing ke dashboard menggunakan controller
 Route::get('/about', [AboutController::class, 'index']);
+
+// routing ke form create
+Route::get('/produk/create', [ProdukController::class, 'create']);
+// routing untuk tambah data fungsi store
+Route::post('/produk/store', [ProdukController::class, 'store']);
+
+// routing ke form edit
+Route::get('/produk/edit/{id}', [ProdukController::class, 'edit']);
+// routing untuk edit data menggunakan fungsi update
+Route::put('/produk/update/{id}', [ProdukController::class, 'update']);
+// routing untuk delete data menggunakan fungsi destroy
+Route::get('/produk/delete/{id}', [ProdukController::class, 'destroy']);
